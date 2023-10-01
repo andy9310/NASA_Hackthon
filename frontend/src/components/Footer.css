@@ -1,0 +1,27 @@
+.footer-container {
+    background-color: #d8a552;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .footer-subscription > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+
+  .footer-subscription-text {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.664);
+  }

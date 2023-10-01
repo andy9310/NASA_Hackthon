@@ -1,0 +1,85 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgba(51, 51, 51, 0.568); */
+}
+
+header .logo {
+  color: #fff;
+  /* background-color: rgba(34, 34, 34, 0.932);
+  padding: 5px 15px;
+  border-radius: 10px; */
+
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.toggle {
+  position: relative;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-color: rgba(34, 34, 34, 0.932);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-color: rgba(34, 34, 34, 0.932);
+
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+  /* right: 200px; */
+  transform: translateX(-200px);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: -200px;
+  background-color: #242424e3;
+  z-index: 2000;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.menu.active {
+  right: 0px;
+}
+
+.menu ul {
+  position: relative;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li div {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+.menu ul li div:hover {
+  color: #03a9f4;
+}

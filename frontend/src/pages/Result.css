@@ -1,0 +1,208 @@
+.nav-in-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-in-container header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 40px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(14, 14, 14, 0.815);
+  /* border-top: solid rgba(41, 41, 41, 0.795) 5px;
+  border-bottom: solid rgba(41, 41, 41, 0.795) 5px; */
+}
+.nav-in-container header a {
+  text-decoration: none;
+}
+
+.nav-in-container header .logo {
+  color: rgb(231, 231, 231);
+  /* background-color: rgba(34, 34, 34, 0.932);
+	padding: 5px 15px;
+	border-radius: 10px; */
+
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-in-container .toggle {
+  position: relative;
+  right: 0px;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-color: rgba(34, 34, 34, 0.932);
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.nav-in-container .toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-color: rgba(34, 34, 34, 0.932);
+
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+  /* right: 200px; */
+  transform: translateX(-200px);
+}
+
+.result-container {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template: "show list" / 60% 40%;
+  z-index: 10;
+}
+
+.show-profile {
+  grid-area: "show";
+  position: relative;
+  /* width: 100vw; */
+  /* height: 74vh; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  background-image: url("../images/result/back2.jpg");
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* z-index: -2; */
+}
+
+.blur {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.title-text {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  color: white;
+  border: solid white 2px;
+  background-color: rgba(68, 68, 68, 0.842);
+}
+.rank-list {
+  grid-area: "list";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+
+  /* border: solid whitesmoke 10px; */
+  background-image: url("../images/result/back.jpg");
+  /* background-color: rgba(83, 83, 83, 0.5); */
+  background-blend-mode: overlay;
+}
+
+.social-links {
+  /* position: relative; */
+  /* left: -5%; */
+}
+
+.social {
+  position: relative;
+  /* left: -30%; */
+  top: -20px;
+  margin: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  z-index: 11;
+}
+.social li {
+  list-style: none;
+}
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+.social li a i {
+  color: rgb(41, 41, 41);
+}
+.social li a:hover {
+  transform: scale(1.1) translateY(-15px);
+}
+
+.img-gallery-container {
+  position: relative;
+  column-count: 3;
+  padding: 20px;
+  padding-top: 0px;
+}
+
+.img-gallery-container .image {
+  display: inline-block;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.img-gallery-container .image img {
+  width: 100%;
+  transition: 0.25s ease-in-out;
+}
+
+.img-gallery-container .image:hover img {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 760px) {
+  .img-gallery-container {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .img-gallery-container {
+    column-count: 2;
+  }
+}
+
+.show-profile .stats {
+  background-color: rgba(231, 231, 231, 0);
+  margin: 10px;
+  z-index: 10;
+}
+
+.stats .name {
+  margin: 20px;
+  padding-left: 10px;
+  font-size: 2.5em;
+  margin-bottom: 0px;
+}
+.stats .title {
+  padding-left: 10px;
+  margin: 20px;
+  margin-top: 0px;
+
+  font-size: 1.3em;
+}
+.stats .detail-intro {
+  width: 50%;
+  padding-left: 10px;
+  margin: 20px;
+  /* background-color: blanchedalmond; */
+}

@@ -1,0 +1,65 @@
+.example-card-container {
+  margin-right: 50px;
+  margin-left: 40px;
+  width: 250px;
+  min-width: 250px;
+  height: 330px;
+  background-color: darkslategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: solid rgba(41, 0, 107, 0.5) 5px;
+  transition: 0.4s;
+}
+.example-card-container:hover {
+  transform: scale(1.1);
+  -webkit-box-shadow: 7px 12px 13px -2px rgba(0, 0, 0, 0.97);
+  box-shadow: 7px 12px 13px -2px rgba(0, 0, 0, 0.97);
+}
+.ex-img-container {
+  position: relative;
+  top: 1%;
+  width: 100%;
+  height: 75%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: solid black 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+}
+
+.ex-stats {
+  z-index: 3;
+  border-top: solid rgba(99, 99, 99, 0.6) 5px;
+  width: 100%;
+  height: 25%;
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ex-dummy-1 {
+  position: relative;
+  top: 10%;
+  left: 6%;
+  width: 70%;
+  height: 20px;
+  background-color: rgba(20, 20, 173, 0.596);
+  border-radius: 5px;
+}
+
+.ex-dummy-2 {
+  position: relative;
+  top: -2%;
+  left: 6%;
+  width: 50%;
+  border-radius: 5px;
+  height: 20px;
+  background-color: rgba(44, 173, 5, 0.548);
+}
